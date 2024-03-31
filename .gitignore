@@ -1,4 +1,5 @@
 deploy/site/
+deploy/tf/plans/
 deploy/.terraform/
 deploy/.terraform.lock.hcl
 deploy/.terraform.tfstate
