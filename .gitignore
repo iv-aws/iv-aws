@@ -1,0 +1,5 @@
+deploy/site/
+deploy/.terraform/
+deploy/.terraform.lock.hcl
+deploy/.terraform.tfstate
+deploy/.terraform.tfstate.backup
