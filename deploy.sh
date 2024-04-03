@@ -19,7 +19,7 @@ printf '\n'
 echo 'Source Info'
 printf '+-------------------------------------------------\n'
 printf '|      Branch: %s\n' $TF_VAR_COMMIT_BRANCH
-printf '| Commit Hash: %s\n' TF_VAR_COMMIT_HASH
+printf '| Commit Hash: %s\n' $TF_VAR_COMMIT_HASH
 printf '| Commit Date: %s\n' "$(git log -1 HEAD --format='%cd')"
 printf '|              %s\n' $TF_VAR_COMMIT_TIMESTAMP
 printf '| \n'
@@ -38,7 +38,7 @@ cd deploy/tf
 
     printf '\n* Terraform Apply:\n'
     echo "Applying $plan_dir/$plan_id.tfplan ..."
-    # terraform apply "plans/tfplan"
+    terraform apply "$plan_dir/$plan_id.tfplan"
 cd -
 
 echo '[+] Deploy Script Done!'

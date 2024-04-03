@@ -13,7 +13,10 @@ def lambda_handler(event, context):
   #   'statusCode': response['ResponseMetadata']['HTTPStatusCode'],
   #   'body': 'Record ' + event['id'] + ' added'
   # }
+  return lambda_helper()
+
+def lambda_helper():
   return {
-    'statusCode': 200,
-    'body': 'Hello World'
-  }
+      'statusCode': 200,
+      'body': 'Hello World'
+    }

@@ -1,6 +1,9 @@
 deploy/site/
 deploy/tf/plans/
-deploy/.terraform/
-deploy/.terraform.lock.hcl
-deploy/.terraform.tfstate
-deploy/.terraform.tfstate.backup
+deploy/tf/.terraform/
+deploy/tf/.terraform.lock.hcl
+deploy/tf/terraform.tfstate
+deploy/tf/terraform.tfstate.backup
+
+__pycache__
+private.txt
